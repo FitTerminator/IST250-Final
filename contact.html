@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.0/jquery.validate.js"></script>
+    <script>
+    $(document).ready(function(){
+       $('form').validate();
+    });
+    </script>
+
+<div class="wrapper">
+	<link rel="stylesheet" href="apple.css">
+			
+		<header>
+	<title>Contact Website Owner</title>
+		<h1>Apple Events</h1>
+			<nav style="list-style-type:none;">
+				<li><a href="index.html">Home</a></li> 
+				<li><a href="watch.html">Watch the Events!</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</nav>
+		</header>
+<head/>	
+<body>
+	<main>
+		<h2>Contact the Website Owner (This does not actually work!)</h2>
+		<p>Please do not forget the required (*) fields!</p>		
+
+		<dl>
+			<form method="post" action="validateform.html" onsubmit="return validateForm();">
+			<label for="myName">Name:</label>
+                  <input type="text" id="myName" name="myName">
+			<label for="myEmail">*E-mail:</label>
+        		<input type="email" id="myEmail" name="myEmail" class="required email">
+         		<label for="myComments">Comments:</label>
+         		<textarea id="myComments" name="myComments" rows="2" cols="20"></textarea>
+         		<input type="submit" value="Send Now" id="mySubmit">
+			</form>
+		</dl>
+
+	</main>
+
+</body>
+	<footer>
+		<small><i><p>Copyright &copy; 2022 Apple Inc. - This is a mockup website I have created, I do not own any of the discussed material<br> <a href="email.html">[Redacted]@gmail.com</a></small></i></p>
+	</footer>	
+</div>
+</html>
